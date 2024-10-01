@@ -1,0 +1,18 @@
+/* Add this to your CSS file */
+@media (max-width: 768px) {
+    .desktop-images {
+      display: none;
+    }
+    .mobile-images {
+      display: flex;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .desktop-images {
+      display: flex;
+    }
+    .mobile-images {
+      display: none;
+    }
+  }
