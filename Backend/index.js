@@ -29,7 +29,8 @@ app.use(cors({
 app.use("/api", router);
 app.use("/",()=>{
   console.log("Hello");
-       )
+})
+      
 const PORT = process.env.PORT || 8080;
 connectDB().then(() => {
   app.listen(PORT, async () => {
