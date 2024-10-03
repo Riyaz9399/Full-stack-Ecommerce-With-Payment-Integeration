@@ -16,15 +16,9 @@ app.use(express.json());
 const allowedOrigins = [process.env.FRONTEND_URL, 'http://localhost:3000']; // Include localhost for development
 
 app.use(cors({
-  origin: function (origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      return callback(null, true);
-    } else {
-      return callback(new Error('Not allowed by CORS'));
-    }
-  },
-  credentials: true // Allow credentials if needed
-}));
+    origin : process.env.FRONTEND_URL,
+    credentials : true
+}))
 
 app.use("/api", router);
 
