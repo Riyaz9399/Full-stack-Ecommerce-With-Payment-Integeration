@@ -40,7 +40,8 @@ export const userLoginController = async (req, res) => {
         }
         const tokenOption = {
           httpOnly :true,
-          secure:true
+          secure:true,
+          sameSite: 'None'
         }
         const token = await jsonwebToken.sign(tokenData,process.env.secreat_key,{expiresIn : 60 * 60 * 8})
           return res.cookie("token",token,tokenOption).json({
