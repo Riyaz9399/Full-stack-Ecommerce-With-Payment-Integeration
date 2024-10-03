@@ -70,17 +70,17 @@ const Header = () => {
           <div className="flex gap-2 ">
           <div>
         <Link to="/">
-          <p className="font-mediam  hover:text-red-600" >HOME</p>
+          <p className="font-sm  hover:text-red-600" >HOME</p>
           </Link>
         </div>
           <div>
         <Link to="/cart">
-          <p className="font-mediam hover:text-red-600" >CART</p>
+          <p className="font-sm hover:text-red-600" >CART</p>
           </Link>
         </div>
         <div>
         <Link to="/order">
-          <p className="font-mediam hover:text-red-600" >ORDERS</p>
+          <p className="font-sm hover:text-red-600" >ORDERS</p>
           </Link>
         </div>
           </div>
