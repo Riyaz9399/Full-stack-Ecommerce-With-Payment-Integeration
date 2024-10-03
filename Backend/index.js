@@ -12,9 +12,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.json());
 
-// CORS configuration
-const allowedOrigins = [process.env.FRONTEND_URL, 'http://localhost:3000']; // Include localhost for development
-
 app.use(cors({
     origin : process.env.FRONTEND_URL,
     credentials : true
