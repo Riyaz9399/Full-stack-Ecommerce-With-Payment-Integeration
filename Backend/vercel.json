@@ -1,15 +1,15 @@
 {
-    "version" :2,
-    "name" : "Full Stack",
-    "builds" :[
-        {
-            "src":"*.js",
-            "use":"@vercel/node"
-        }
+    "version":2,
+    "name":"Full Stack",
+    "builds":[
+         {
+             "src":"./index.js",
+             "use":"@vercel/node"
+         }
     ],
     "routes":[
         {
-            "src":"./(.*)",
+            "src":"/(.*)",
             "dest":"/"
         }
     ]
