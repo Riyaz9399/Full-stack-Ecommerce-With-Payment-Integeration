@@ -13,7 +13,7 @@ const productCategories = [
     {id: 12, label: "Oil", value: "oil"},
     {id: 13, label: "Flour", value: "flour"},
     {id: 14, label: "Pulses ", value: "pulses"},
-    {id: 15, label: "Spices", value: "spices"},
+    {id: 15, label: "Spices", value: "Spices"},
     {id: 16, label: "Toothpaste", value: "toothpaste"},
     {id: 17, label: "Face Wash ", value: "faceWash "},
     {id: 18, label: "Biscuits", value: "biscuits"},
