@@ -202,7 +202,7 @@ const Cart = () => {
             : data.map((product) => (
                 <div
                   key={product?._id + "Add to cart loading"}
-                  className="w-full bg-white h-32 my-2 border-slate-300 rounded grid grid-cols-[128px,1fr]"
+                  className="w-full bg-white h-36 my-2 border-slate-300 rounded grid grid-cols-[128px,1fr]"
                 >
                   <div className="w-32 h-32 bg-slate-200">
                     <img
