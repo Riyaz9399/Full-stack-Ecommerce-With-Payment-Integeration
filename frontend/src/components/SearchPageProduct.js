@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import { displayINRCurrency } from "../helpers/DisplayCurrecy.js";
 import { Link } from "react-router-dom";
 import { addToCart } from "../helpers/AddtoCart.js";
+import { Context } from "../context/index.js";
 
 const SearchpageProduct = ({ products, heading }) => {
   const loadingList = new Array(12).fill(null);
+
+
+  const { fetchUserAddtoCart } = useContext(Context);
+  const handleAddToCart = async (e, id) => {
+    await addToCart(e, id); // Ensure the cart is updated
+
+    fetchUserAddtoCart(); // Update the UI with new cart state
+  };
 
   return (
     <div className="container mx-4 p-2  relative">
@@ -52,7 +61,7 @@ const SearchpageProduct = ({ products, heading }) => {
                   </div>
                   <button
                     className="bg-red-600 mx-2 my-2 px-3 py-1 rounded-full hover:bg-red-700 text-white"
-                    onClick={(e) => addToCart(e, product?._id)}
+                    onClick={(e) => handleAddToCart(e, product?._id)}
                   >
                     Add to cart
                   </button>

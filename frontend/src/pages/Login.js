@@ -99,12 +99,12 @@ const Login = () => {
                   </span>
                 </div>
               </div>
-              <Link
+              {/* <Link
                 to={"/Forget-password"}
                 className="block w-fit ml-auto hover:underline hover:text-red-700 "
               >
                 Forget password
-              </Link>
+              </Link> */}
             </div>
 
             <button type="submit" className="bg-red-600 text-white w-full max-w-[150px] h-full rounded-full p-2  hover:scale-110 transition-all mx-auto block mt-4">

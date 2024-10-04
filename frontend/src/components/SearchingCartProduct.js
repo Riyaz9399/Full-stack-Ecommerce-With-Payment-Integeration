@@ -6,12 +6,15 @@ import { displayINRCurrency } from "../helpers/DisplayCurrecy.js";
 
 const SearchingCartProduct = ({ loading, data = [] }) => {
     const loadingList = new Array(13).fill(null);
-    const { fetchUserAddToCart } = useContext(Context);
+    const { fetchUserAddtoCart } = useContext(Context);
 
     const handleAddToCart = async (e, id) => {
-        await addToCart(e, id);
-        fetchUserAddToCart();
+      await addToCart(e, id); // Ensure the cart is updated
+  
+      fetchUserAddtoCart(); // Update the UI with new cart state
     };
+  
+
 
     return (
         <div className='grid grid-cols-[repeat(auto-fit,minmax(260px,300px))] justify-center md:justify-between md:gap-5 overflow-x-scroll scrollbar-none transition-all'>

@@ -33,9 +33,9 @@ const Orders = () => {
     <h1 className="text-center text-red-600 py-5 font-semibold text-2xl">
       Orders
     </h1>
-    <div className="text-center text-lg my-3">
+    {/* <div className="text-center text-lg my-3">
       {data.length === 0 && <p className="bg-white py-5">NO DATA</p>}
-    </div>
+    </div> */}
     <div>
       {data.length > 0 ? (
         <div className="space-y-6">

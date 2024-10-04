@@ -69,18 +69,13 @@ const Header = () => {
 
           <div className="flex gap-2 ">
           <div>
-        <Link to="/">
-          <p className="font-sm  hover:text-red-600" >HOME</p>
-          </Link>
-        </div>
-          <div>
         <Link to="/cart">
-          <p className="font-sm hover:text-red-600" >CART</p>
+          <p className="font-xs hover:text-red-600" >CART</p>
           </Link>
         </div>
         <div>
         <Link to="/order">
-          <p className="font-sm hover:text-red-600" >ORDERS</p>
+          <p className="font-xs hover:text-red-600 " >ORDERS</p>
           </Link>
         </div>
           </div>
@@ -122,7 +117,7 @@ const Header = () => {
             {menuDisplay && (
               <div className="absolute  bg-white bottom-0 top-11 h-fit p-2 rounded-sm  shadow-lg ">
                 <nav>
-                  {user?.role == ROLE.ADMIN && (
+                  {user?.role === ROLE.ADMIN && (
                     <span>
                       <Link
                         to={"/admin-panel/Product"}
