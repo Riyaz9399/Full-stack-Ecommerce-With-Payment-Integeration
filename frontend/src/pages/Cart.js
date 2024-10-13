@@ -79,7 +79,7 @@ const Cart = () => {
       },
       modal: {
         ondismiss: function () {
-          window.location.href = `${process.env.REACT_APP_FRONTEND_URL}/cancle`;
+          window.location.href = `https://full-stack-ecommerce-with-payment-integeration-wdfce.vercel.app/cancle`;
         },
       },
     };
